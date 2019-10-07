@@ -42,9 +42,11 @@ class TicTacToe
   end
 
   def turn_count
+    counter = 0
     counter += 1 if el != " "
+    counter
   end
-  counter
+
 
 
 
