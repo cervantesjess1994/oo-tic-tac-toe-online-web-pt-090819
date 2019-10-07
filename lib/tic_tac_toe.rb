@@ -72,7 +72,6 @@ class TicTacToe
     winner = nil
 
     WIN_COMBINATIONS.each do |combo|
-       #this Checks to see if all the indexs are equal to X if so that means this particualr array won.
       if combo.all? {|win| @board[win] == "X" }
         winner = combo
       elsif combo.all? {|win| @board[win] === "O" }
@@ -97,7 +96,6 @@ class TicTacToe
   end
 
   def winner
-    # won? ? @board[won?[0]] : nil
     if player = won?
       @board[player[0]]
     end
