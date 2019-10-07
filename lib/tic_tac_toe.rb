@@ -50,8 +50,6 @@ class TicTacToe
   end
 
 
-
-
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
@@ -69,6 +67,7 @@ class TicTacToe
 
     def won?
       winner = nil
+      
       WIN_COMBINATIONS.each do |combo|
         if combo.all? {|win| @board[win] == "X"}
           winner = combo
