@@ -50,14 +50,11 @@ class TicTacToe
   end
 
   def current_player
-    ## if it's an even number on turn count then we return X
-    # turn_count % 2 == 0 ? "X" : "O"
     if turn_count % 2 == 0
       "X"
     else
       "O"
     end
-    # turn_count.even? ? "X" : "O"
   end
 
   def turn
