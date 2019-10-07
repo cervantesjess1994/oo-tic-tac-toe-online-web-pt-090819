@@ -1,3 +1,4 @@
+require 'pry'
 class TicTacToe
   attr_reader :board
 
